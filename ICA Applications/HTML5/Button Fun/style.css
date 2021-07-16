@@ -1,0 +1,39 @@
+body {
+  font-family: 'Righteous', cursive;
+  background-color: aliceblue
+}
+
+header h1 {
+  text-align: center;
+  text-shadow: 3px 3px #aaaaaa;
+  font-size: 4em;
+}
+
+header em {
+  display: block;
+  text-align: center;
+}
+
+.click-tally {
+  text-align: center;
+  font-size: 2em;
+  display: block;
+}
+
+.click-tally-fancy {
+  display: inline-flex;
+}
+
+.click-tally-fancy-number {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 3px 3px #aaaaaa;
+  font-family: 'Syne Mono', monospace;
+  margin: 2px;
+}
+
+.cursor-button {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}

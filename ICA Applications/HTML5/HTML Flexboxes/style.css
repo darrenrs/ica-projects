@@ -1,0 +1,26 @@
+.flex div {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border: 4px solid grey;
+  font-family: cursive;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-containerA {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-containerB {
+  flex-direction: column-reverse;
+}
+
+.flex-containerC {
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row-reverse;
+}

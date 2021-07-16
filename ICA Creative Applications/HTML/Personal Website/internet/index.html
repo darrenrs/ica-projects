@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Questions</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/res/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="/res/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="/favicon.ico" rel="icon">
+  </head>
+  <body class="bg-white text-dark">
+      <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light text-dark border-bottom">
+          <a id="navbar-name" href="../" class="navbar-brand">
+            <img id="drs-logo" src="/res/img/deluxe.png" alt="d">
+            Darren R. Skidmore
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-subject" aria-controls="navbar-subject" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar-subject" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="/about/" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/interests/" class="nav-link">Career Interests</a>
+              </li>
+              <li class="nav-item">
+                <a href="/ql/" class="nav-link">Quick Links (your choice)</a>
+              </li>
+              <li class="nav-item">
+                <a href="/internet/" class="nav-link active">Internet</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button type="button" class="btn drs-dm-target btn-outline-light text-dark mx-1" data-toggle="modal" data-target="#drs-opt-modal">Settings</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        &nbsp;
+      </header>
+      <div class="container">
+        <h1 class="display-3">Internet Questions</h1>
+        <h2>How does the Internet work?</h2>
+        <p><a href="https://paleofuture.gizmodo.com/did-al-gore-invent-the-internet-1447761524">Invented by Al Gore, the Internet runs on magic.</a> Well, alright, that may just be an Internet joke. The Internet in reality is pretty sophisticated. Let's start when you make a request to this current webpage: <code>https://personal-website--darrenskidmore.repl.co/internet/</code>, following the journey of one packet.</p>
+        <p>First, your client (Google Chrome) resolves the URL, by contacting the DNS record for <code>repl.co</code>. For this website, it will need to obtain a CNAME record first. Afterwards, the packet is sent. To paraphrase, it will travel in these steps:</p>
+        <ol>
+          <li>Your computer (<a href="http://127.0.0.1">localhost</a>)</li>
+          <li>The modem (<a href="http://192.168.0.1">192.168.0.1</a>), whether that be a router, WAP, or cell tower</li>
+          <li>The ISP's servers</li>
+          <li>The third-party destination</li>
+        </ol>
+        <p>If you requested an HTTPS url, it will also need to obtain a valid security certificate. Next, the server's backend code will generate the HTML response, and send it back to the client. The client may already have information cached, and this can only be bypassed by refreshing the page with <kbd>CTRL+SHIFT+R</kbd>.</p>
+        <h2>What does a browser do with HTML/CSS/JS code?</h2>
+        <p>HTML consists of the content of the webpage, CSS consists of styling instructions, and JS consists of Turing-complete code to modify HTML or CSS code (<a href="https://notlaura.com/is-css-turing-complete/">CSS is also technically Turing-complete</a>, somehow). Interpreters in the browser process this codes. Some browsers, like the behemoth that is Internet Explorer, have outdated interpreters and do not recognize the most simple CSS attributes.</p>
+        <h2>Cookies/Extensions</h2>
+        <p>Cookies on the Internet are used to store local browser preferences or session IDs. They differ from <code>LocalStorage</code> and <code>SessionStorage</code> in that they <em>are</em> sent to the server via web requests, while the latter two are entirely client-side.</p>
+        <h2>Server-side vs. Client-side</h2>
+        <p>Server-side is used to describe anything that takes place on the webserver, while client-side is used to describe what happens to the local user.</p>
+      </div>
+      <div class="modal fade" id="drs-opt-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-light text-dark">
+            <div class="modal-header">
+              <h3 class="modal-title" id="drs-opt-modal-label">Settings</h3>
+              <button type="button" class="close drs-dm-target btn-outline-light text-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ml-2 mr-2">
+              <div class="row">
+                <h4>Fonts are available from Google Fonts. You may select one from <a href="https://fonts.google.com">here</a>.</h4>
+              </div>
+              <div class="row">
+                <form action="https://google.com/search" target="_blank" class="form-inline">
+                  <img id="drs-image-google" class="ml-3" src="/res/img/gsuite.png" alt="google">
+                  <input id="drs-search-google" class="form-control bg-light text-dark mx-1" type="search" name="q" placeholder="Google Search" required>
+                  <button id="drs-search-google-button" class="btn btn-outline-primary mx-1" type="submit">Search</button>
+                  <code id="drs-search-google-len" class="mx-1">0</code>
+                </form>
+              </div>
+              <div class="row">
+                <button id="drs-darkmode-button" class="btn drs-dm-target btn-outline-light text-dark">Dark Mode: disabled</button>
+              </div>
+              <div class="row">
+                <input id="drs-fontchg-body" class="form-control bg-light text-dark col-sm-3 col-md-5" placeholder="Body Font">
+                <button id="drs-fontchg-body-dlfont" class="btn btn-primary col-sm-3 col-md-2">Set Font</button>
+                <button id="drs-fontchg-body-rfont" class="btn btn-danger col-sm-3 col-md-2">Reset Font</button>
+                <span id="drs-fontchg-body-ex" class="col-sm-3 col-md-3">Font: default</span>
+              </div>
+              <div class="row">
+                <input id="drs-fontchg-mono" class="form-control bg-light text-dark col-sm-3 col-md-5" placeholder="Monospace Font">
+                <button id="drs-fontchg-mono-dlfont" class="btn btn-primary col-sm-3 col-md-2">Set Font</button>
+                <button id="drs-fontchg-mono-rfont" class="btn btn-danger col-sm-3 col-md-2">Reset Font</button>
+                <code id="drs-fontchg-mono-ex" class="col-sm-3 col-md-3">Font: default</code>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <span class="mr-auto">Last modified: <code id="drs-date-modified">turn on JavaScript</code></span>
+              <button type="button" id="drs-resetdata" class="btn btn-danger">Reset Data</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Exit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

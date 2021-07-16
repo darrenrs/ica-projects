@@ -1,0 +1,78 @@
+* {
+  font-family: 'Righteous', cursive;
+}
+
+h1, h2 {
+  border-bottom: 2px solid #cc2727;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1680px) {
+  .flex {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .flex {
+    display: block;
+  }
+
+  .flex > div:first-child {
+    border-bottom: 5px dotted black;
+  }
+}
+
+.clicked {
+  font-weight: 900;
+}
+
+button {
+  background-color: #2caaf9;
+  color: #343a40;
+  border: 2px solid #343a40;
+  padding: 5px;
+  font-size: 16px
+}
+
+.flex > div {
+  display: table;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #d8d8d8;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+th:not(:first-child) {
+  border-left: 1px solid black;
+}
+
+tr.tr-democratic {
+  background-color: #3333ff;
+}
+
+tr.tr-republican {
+  background-color: #e81b23;
+}
+
+td {
+  color: white;
+  padding: 10px;
+}
+
+td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+  text-align: right;
+  font-family: 'Syne Mono', monospace;
+}
+
+td.nojs {
+  color: black;
+}

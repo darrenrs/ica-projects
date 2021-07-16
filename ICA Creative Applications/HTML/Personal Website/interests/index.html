@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies / Career Interests</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/res/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="/res/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="/favicon.ico" rel="icon">
+  </head>
+  <body class="bg-white text-dark">
+      <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light text-dark border-bottom">
+          <a id="navbar-name" href="../" class="navbar-brand">
+            <img id="drs-logo" src="/res/img/deluxe.png" alt="d">
+            Darren R. Skidmore
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-subject" aria-controls="navbar-subject" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar-subject" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="/about/" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/interests/" class="nav-link active">Career Interests</a>
+              </li>
+              <li class="nav-item">
+                <a href="/ql/" class="nav-link">Quick Links (your choice)</a>
+              </li>
+              <li class="nav-item">
+                <a href="/internet/" class="nav-link">Internet</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button type="button" class="btn drs-dm-target btn-outline-light text-dark mx-1" data-toggle="modal" data-target="#drs-opt-modal">Settings</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        &nbsp;
+      </header>
+      <div class="container">
+        <h1 class="display-3">Hobbies / Career Interests</h1>
+        <ul class="list-unordered">
+          <li><strong>Coding</strong> is a passion of mine. I had had lukewarm experiences with coding in the past, such as wrestling through a Minecraft mod maker. For some reason, I was really never interested in it, probably because the game version was 1.4 or something archaic. What really got me into coding was when I was 13 years old and I used coding to help me process data regarding... questionable things on the district's servers. Let's just say that is why I have to use a Chromebook in class. The languages I have used are: HTML, CSS, JS, Python, PHP (avoid at all costs), Java, SQL, and Regex.</li>
+          <li>In addition, <strong>computers in general.</strong> I just think computers are amazing because of how calculations can be automated. Something I am interested in learning is artificial intelligence.</li>
+          <li><strong>Math </strong> is another subject that I'm great at. Last year as a freshman I completed math through the 11<sup>th</sup> grade year, and I plan on taking Math 1050 next semester if I pass the ALEKS Accuplacer. I have tested at the 99.9th percentile (147) in math comprehension (WJ-III).</li>
+          <li><strong>Data and databases: </strong> data also deals with a <em>lot</em> of numbers. While most kids play video games in their free time (I do as well sometimes), I consider myself a heretic in that I prefer exploring data and statistical correlations (links back to math).</li>
+          <li><strong>Running: </strong> I currently run Cross Country for Roy High. I'm not <em>super</em> fast, but I have respectable times.
+            <table class="table table-hover table-sm">
+              <thead>
+                <tr>
+                  <th scope="col" colspan=2>Distance</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Pace</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>400m</td>
+                <td>0.25 miles</td>
+                <td>ca. 1:03</td>
+                <td>4:12 / mile</td>
+              </tr>
+              <tr>
+                <td>800m</td>
+                <td>0.5 miles</td>
+                <td>2:24.03</td>
+                <td>4:48 / mile</td>
+              </tr>
+              <tr>
+                <td>1600m</td>
+                <td>1.0 miles</td>
+                <td>5:36.10</td>
+                <td>5:36 / mile</td>
+              </tr>
+              <tr>
+                <td>3200m</td>
+                <td>2.0 miles</td>
+                <td>12:52</td>
+                <td>6:26 / mile</td>
+              </tr>
+              <tr>
+                <td>5K</td>
+                <td>3.1 miles</td>
+                <td>20:13</td>
+                <td>6:38 / mile</td>
+              </tr>
+              <tr>
+                <td>Longest Distance</td>
+                <td>13.1 miles</td>
+                <td>1:46:05</td>
+                <td>8:06 / mile</td>
+              </tr>
+            </table>
+          </li>
+          <li>I played the <strong>piano</strong> between 2014 and 2019, but I decided to discontinue playing.</li>
+        </ul>
+      </div>
+      <div class="modal fade" id="drs-opt-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-light text-dark">
+            <div class="modal-header">
+              <h3 class="modal-title" id="drs-opt-modal-label">Settings</h3>
+              <button type="button" class="close drs-dm-target btn-outline-light text-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ml-2 mr-2">
+              <div class="row">
+                <h4>Fonts are available from Google Fonts. You may select one from <a href="https://fonts.google.com">here</a>.</h4>
+              </div>
+              <div class="row">
+                <form action="https://google.com/search" target="_blank" class="form-inline">
+                  <img id="drs-image-google" class="ml-3" src="/res/img/gsuite.png" alt="google">
+                  <input id="drs-search-google" class="form-control bg-light text-dark mx-1" type="search" name="q" placeholder="Google Search" required>
+                  <button id="drs-search-google-button" class="btn btn-outline-primary mx-1" type="submit">Search</button>
+                  <code id="drs-search-google-len" class="mx-1">0</code>
+                </form>
+              </div>
+              <div class="row">
+                <button id="drs-darkmode-button" class="btn drs-dm-target btn-outline-light text-dark">Dark Mode: disabled</button>
+              </div>
+              <div class="row">
+                <input id="drs-fontchg-body" class="form-control bg-light text-dark col-sm-3 col-md-5" placeholder="Body Font">
+                <button id="drs-fontchg-body-dlfont" class="btn btn-primary col-sm-3 col-md-2">Set Font</button>
+                <button id="drs-fontchg-body-rfont" class="btn btn-danger col-sm-3 col-md-2">Reset Font</button>
+                <span id="drs-fontchg-body-ex" class="col-sm-3 col-md-3">Font: default</span>
+              </div>
+              <div class="row">
+                <input id="drs-fontchg-mono" class="form-control bg-light text-dark col-sm-3 col-md-5" placeholder="Monospace Font">
+                <button id="drs-fontchg-mono-dlfont" class="btn btn-primary col-sm-3 col-md-2">Set Font</button>
+                <button id="drs-fontchg-mono-rfont" class="btn btn-danger col-sm-3 col-md-2">Reset Font</button>
+                <code id="drs-fontchg-mono-ex" class="col-sm-3 col-md-3">Font: default</code>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <span class="mr-auto">Last modified: <code id="drs-date-modified">turn on JavaScript</code></span>
+              <button type="button" id="drs-resetdata" class="btn btn-danger">Reset Data</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Exit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

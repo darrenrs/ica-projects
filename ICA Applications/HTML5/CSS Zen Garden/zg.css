@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap");
+
+body {
+	margin: 0;
+	font-family: "Montserrat";
+}
+
+header {
+	background-image: url("https://cdn.wedding-spot.com/images/venues/11644/Queens-Botanical-Garden-Flushing-NY-6e8011f2-c7d6-46cb-8666-382b7c071e11.jpg");
+	background-size: cover;
+	height: 100vh;
+	line-height: 50vh;
+}
+
+header h1,
+header p {
+	text-align: center;
+	vertical-align: middle;
+}
+
+header h1 {
+	font-variant: small-caps;
+	font-size: calc(32px + 60 * ((100vw - 300px) / 1600));
+	font-weight: 900 !important;
+	margin: 0;
+	/* Background stuff */
+	background-color: #ed4940;
+	/* fallback */
+	background-image: linear-gradient(45deg, #ed4940 25%, #ed4940 35%, #e89817 35%, #e89817 50%, #2cc746 50%, #2cc746 65%, #226de6 65%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-stroke: black 3px;
+	animation: header-red-text-rd 0.5s ease forwards;
+}
+
+header h1:hover {
+	animation: header-red-text 0.5s ease-in forwards;
+}
+
+header p {
+	font-size: calc(32px + 10 * ((100vw - 300px) / 1600));
+	font-weight: 600;
+	color: rgba(255, 255, 255, 255);
+	-webkit-text-stroke: #b79997 1.5px;
+	font-style: italic;
+}
+
+@keyframes header-red-text {
+	0% {
+		background-size: 100%;
+	}
+	80% {
+		background-size: 650%;
+	}
+	100% {
+		background-size: 650%;
+	}
+}
+
+@keyframes header-red-text-rd {
+	0% {
+		background-size: 650%;
+	}
+	80% {
+		background-size: 100%;
+	}
+	100% {
+		background-size: 100%;
+	}
+}
+
+section {
+	margin: 1em;
+	border-top: 2px black solid;
+}
+
+h2 {
+	font-weight: 600;
+	border-left: 1px solid black;
+	background-color: #eee;
+	padding-left: 9px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	background: linear-gradient(90deg, black 0%, #eee 1%);
+	animation: h2-gradient-rd .3s ease forwards;
+}
+
+h2:hover {
+	background: linear-gradient(90deg, black 0%, #eee 1%);
+	color: #eee;
+	animation: h2-gradient .3s ease-in forwards;
+}
+
+@keyframes h2-gradient {
+	0% {
+		background-size: 100%;
+		color: black;
+	}
+	80% {
+		background-size: 5000%;
+		color: #eee;
+	}
+	100% {
+		background-size: 5000%;
+		color: #eee;
+	}
+}
+
+@keyframes h2-gradient-rd {
+	0% {
+		background-size: 5000%;
+		color: #eee;
+	}
+	80% {
+		background-size: 100%;
+		color: black;
+	}
+	100% {
+		background-size: 100%;
+		color: black;
+	}
+}
+
+p {
+	font-weight: 300;
+}
+
+a {
+	color: #ed4940;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.div2,
+.div3,
+.div4,
+.div5 {
+	display: table-cell;
+	width: 10vw;
+	height: 12em;
+}
+
+.div2 {
+	background-color: #f3ca63;
+}
+
+.div3 {
+	background-color: #ff6d00;
+}
+
+.div4 {
+	background-color: #039be5;
+}
+
+.div5 {
+	background-color: #d29436;
+}
+
+.section2 h3 {
+	text-align: center;
+}
+
+img {
+	width: 4em;
+	margin: 0 auto;
+	display: block;
+}
+
+blockquote::before {
+	content: "— ";
+}
+
+blockquote {
+	font-style: italic;
+}
+
+li {
+	display: inline-flex;
+}
+
+li a {
+	padding: 10px;
+}
+
+footer {
+	background-color: #222;
+	color: #ddd;
+	height: 25vh;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+footer::after {
+	content: "this stylesheet was made by Darren R. Skidmore";
+}

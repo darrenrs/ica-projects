@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guess a Number</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <video playsinline autoplay muted loop class="border-bottom">
+      <source src="number.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <header class="section">
+        <h1>Guess a Number</h1>
+        <em>The famous guessing game is back! Guess a number and guess it right!</em>
+      </header>
+      <div class="section">
+        <h2>Parameters</h2>
+        <label for="min">Minimum</label>
+        <input name="min" type="number" min="-2147483648" max="2147483646" value="1">
+        <br>
+        <label for="max">Maximum</label>
+        <input name="max" type="number" min="-2147483647" max="2147483647" value="100">
+        <br>
+        <input class="button-play" name="play" type="button" value="Play Game">
+        <input class="button-cancel" name="cancel" type="button" value="Cancel" style="display: none;">
+        <span id="status">Please enter in your parameters and hit "Play Game"!</span>
+      </div>
+      <div class="section">
+        <h2>Game Bay</h2>
+        <div class="section-row">
+          <span>Minimum</span>
+          <span>N/A</span>
+        </div>
+        <div class="section-row">
+          <span>Maximum</span>
+          <span>N/A</span>
+        </div>
+        <div class="section-row">
+          <span>Range</span>
+          <span>N/A</span>
+        </div>
+        <div class="section-row">
+          <span>Par Guesses</span>
+          <span>N/A</span>
+        </div>
+        <br>
+        <div class="section-row">
+          <span>Total Guesses</span>
+          <span>N/A</span>
+        </div>
+        <label for="guess">Your Guess</label>
+        <input name="guess" type="number" min="-2147483648" max="2147483646" value="" disabled>
+        <br>
+        <input class="button-guess" name="guess" type="button" value="Make a Guess!" disabled>
+        <span id="game-status">Please make a guess!</span>
+      </div>
+      <div class="section">
+        <h2>Guess History</h2>
+        <ol id="guess-history"></ol>
+      </div>
+      <div class="section">
+        <em>Copyright © 2020 Darren R. Skidmore. All rights reserved.</em>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-image: url("/res/nba-logo.png");
+  background-position: center;
+  box-shadow: inset 0 0 30px black;
+}
+
+.court-holder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.court {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  background-image: url("/res/floor.jpg");
+  border: 2px solid #bf8351;
+}
+
+.ball {
+  /*border: 1px black solid;*/
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  background-image: url("/res/basketball.png");
+  background-repeat: no-repeat;
+  background-position: left 20px top 20px;
+
+  transform: rotate(0deg) translateX(0px);
+  transition: transform 1s ease-out;
+}
+
+.ball:hover {
+  transform: rotate(1440deg) translateX(250px);
+  transition: transform 3s ease-out;
+}

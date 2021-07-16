@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darren R. Skidmore</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/res/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="/res/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="/favicon.ico" rel="icon">
+    <link href="/res/index-bg.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="bg-white text-dark">
+      <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light text-dark border-bottom">
+          <a id="navbar-name" href="../" class="navbar-brand">
+            <img id="drs-logo" src="/res/img/deluxe.png" alt="d">
+            Darren R. Skidmore
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-subject" aria-controls="navbar-subject" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar-subject" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="/about/" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/interests/" class="nav-link">Career Interests</a>
+              </li>
+              <li class="nav-item">
+                <a href="/ql/" class="nav-link">Quick Links (your choice)</a>
+              </li>
+              <li class="nav-item">
+                <a href="/internet/" class="nav-link">Internet</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button type="button" class="btn drs-dm-target btn-outline-light text-dark mx-1" data-toggle="modal" data-target="#drs-opt-modal">Settings</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        &nbsp;
+      </header>
+      <div class="overlay"></div>
+      <video playsinline autoplay muted loop class="border-bottom">
+        <source src="/res/img/code.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="jumbotron bg-light text-dark m-1">
+          <h1 class="display-2">Darren's Website</h1>
+          <p class="lead">Welcome to my website. This website utilizes Bootstrap to enhance CSS and jQuery to automate JS tasks. It is likely better than your website. :P</p>
+          <hr>
+          <h2>Rubric</h2>
+          <h3>HTML</h3>
+          <p>HTML code has no known errors and is HTML5-compliant. There are 28 HTML tags. More importantly, the HTML is entirely a product of me.</p>
+          <ul>
+            <li><kbd>&lt;!DOCTYPE html&gt;</kbd> declares the document's MIME type (text/html)</li>
+            <li><kbd>#document</kbd> root pseudo-element used by jQuery</li>
+            <li><kbd>&lt;html&gt;</kbd> the entire page content</li>
+            <li><kbd>&lt;head&gt;</kbd> contains document metadata</li>
+            <li><kbd>&lt;body&gt;</kbd> contains visible content</li>
+            <li><kbd>&lt;meta&gt;</kbd> page metadata for internal purposes</li>
+            <li><kbd>&lt;title&gt;</kbd> declares page title</li>
+            <li><kbd>&lt;script&gt;</kbd> links to JS scripts (2 dist, 1 personal)</li>
+            <li><kbd>&lt;link&gt;</kbd> links to CSS and media</li>
+            <li><kbd>&lt;video&gt;</kbd> background code animation (only in <code>/</code>)</li>
+            <li><kbd>&lt;source&gt;</kbd> specifies the video URL (only in <code>/</code>)</li>
+            <li><kbd>&lt;header&gt;</kbd> contains page header</li>
+            <li><kbd>&lt;nav&gt;</kbd> navbar in page header</li>
+            <li><kbd>&lt;footer&gt;</kbd> contains the page footer</li>
+            <li><kbd>&lt;a&gt;</kbd> links</li>
+            <li><kbd>&lt;img&gt;</kbd> images</li>
+            <li><kbd>&lt;button&gt;</kbd> darkmode button</li>
+            <li><kbd>&lt;ul&gt;</kbd> list holder</li>
+            <li><kbd>&lt;li&gt;</kbd> list elements</li>
+            <li><kbd>&lt;form&gt;</kbd> form for Google search</li>
+            <li><kbd>&lt;input&gt;</kbd> input for Google search</li>
+            <li><kbd>&lt;div&gt;</kbd> like, everything</li>
+            <li><kbd>&lt;span&gt;</kbd> inline text</li>
+            <li><kbd>&lt;code&gt;</kbd> displays text in a code format</li>
+            <li><kbd>&lt;kbd&gt;</kbd> displays text in a code format w/ background (keyboard)</li>
+            <li><kbd>&lt;p&gt;</kbd> paragraph text</li>
+            <li><kbd>&lt;h1&gt;</kbd> header 1</li>
+            <li><kbd>&lt;h2&gt;</kbd> header 2</li>
+            <li><kbd>&lt;h3&gt;</kbd> header 3</li>
+            <li><kbd>&lt;h4&gt;</kbd> header 4</li>
+            <li><kbd>&lt;br&gt;</kbd> line break</li>
+            <li><kbd>&lt;hr&gt;</kbd> horizontal line</li>
+            <!--
+              table
+              thead
+              tbody
+              tr
+              td
+              sup
+              strong
+              em
+              noscript
+            -->
+          </ul>
+          <h3>CSS</h3>
+          <p>Bootstrap 3.4.1 is the core library that provides most styles. I have self-coded some custom animations. The specifications behind the "animated GIF" is that it is an MP4 video file loaded onto the background of the first 100% of the screen height. Credit to <a href="https://startbootstrap.com/snippets/video-header/">StartBootstrap.com</a>.</p>
+          <h3>JavaScript</h3>
+          <p>Native JavaScript DOM selectors suck (looking at you, <code>document.getElementById()</code>), so jQuery is imperative for these purposes. jQuery is primarily used to control dark mode and the <code>LocalStorage</code> key, as well as some additional mini-functions.</p>
+          <h3>Overall Website Layout</h3>
+          <p>The navbar is present on all pages (and even sticks to the top!) All pages conform to the same template and are stored as <code>index.html</code> files under their folder name, meaning no <code>.html</code> file extensions are seen client-side.</p>
+          <h3>Creativity</h3>
+          <p>The website is very creative, IMO ...</p>
+          <h3>Professionalism</h3>
+          <p>... as can be said about professional. There are no mishaps in grammar conventions.</p>
+        </div>
+      </div>
+      <div class="modal fade" id="drs-opt-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-light text-dark">
+            <div class="modal-header">
+              <h3 class="modal-title" id="drs-opt-modal-label">Settings</h3>
+              <button type="button" class="close drs-dm-target btn-outline-light text-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ml-2 mr-2">
+              <div class="row">
+                <h4>Fonts are available from Google Fonts. You may select one from <a href="https://fonts.google.com">here</a>.</h4>
+              </div>
+              <div class="row">
+                <form action="https://google.com/search" target="_blank" class="form-inline">
+                  <img id="drs-image-google" class="ml-3" src="/res/img/gsuite.png" alt="google">
+                  <input id="drs-search-google" class="form-control bg-light text-dark mx-1" type="search" name="q" placeholder="Google Search" required>
+                  <button id="drs-search-google-button" class="btn btn-outline-primary mx-1" type="submit">Search</button>
+                  <code id="drs-search-google-len" class="mx-1">0</code>
+                </form>
+              </div>
+              <div class="row">
+                <button id="drs-darkmode-button" class="btn drs-dm-target btn-outline-light text-dark">Dark Mode: disabled</button>
+              </div>
+              <div class="row">
+                <input id="drs-fontchg-body" class="form-control bg-light text-dark col-sm-3 col-md-5" placeholder="Body Font">
+                <button id="drs-fontchg-body-dlfont" class="btn btn-primary col-sm-3 col-md-2">Set Font</button>
+                <button id="drs-fontchg-body-rfont" class="btn btn-danger col-sm-3 col-md-2">Reset Font</button>
+                <span id="drs-fontchg-body-ex" class="col-sm-3 col-md-3">Font: default</span>
+              </div>
+              <div class="row">
+                <input id="drs-fontchg-mono" class="form-control bg-light text-dark col-sm-3 col-md-5" placeholder="Monospace Font">
+                <button id="drs-fontchg-mono-dlfont" class="btn btn-primary col-sm-3 col-md-2">Set Font</button>
+                <button id="drs-fontchg-mono-rfont" class="btn btn-danger col-sm-3 col-md-2">Reset Font</button>
+                <code id="drs-fontchg-mono-ex" class="col-sm-3 col-md-3">Font: default</code>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <span class="mr-auto">Last modified: <code id="drs-date-modified">turn on JavaScript</code></span>
+              <button type="button" id="drs-resetdata" class="btn btn-danger">Reset Data</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Exit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

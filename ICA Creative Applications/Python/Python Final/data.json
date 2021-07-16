@@ -1,0 +1,652 @@
+{
+  "intro": {
+    "text": [
+      "Welcome!",
+      "Mode ${mode}"
+    ],
+    "input": "Please enter your name.",
+    "response": {
+      "*name": {
+        "text": "",
+        "next": "intro1"
+      }
+    }
+  },
+  "intro1": {
+    "text": [
+      "We need to know if you are left or right handed."
+    ],
+    "input": "Are you left or right handed?",
+    "response": {
+      "*hand": {
+        "text": "",
+        "next": "start_entry"
+      }
+    }
+  },
+  "exit": {
+    "text": [
+      "R.I.P. ${name} ...",
+      "their last words being \"${lastwords}\""
+    ],
+    "input": "",
+    "response": {
+      
+    }
+  },
+  "victory": {
+    "text": [
+      "Placebo element",
+      "Should never be seen in-game"
+    ]
+  },
+  "start_entry": {
+    "text": [
+      "${name}, nice to meet you.",
+      "You wake up in a moor in the middle of nowhere one night. The moon is not visible, nor are any stars.",
+      "Your only intuition you have is that your waking orientation is north."
+    ],
+    "next": "start"
+  },
+  "start": {
+    "text": [
+      "You can go",
+      "east or west ...",
+      "north or south ...",
+      "or wait like a coward."
+    ],
+    "input": "What do you do?",
+    "response": {
+      "0": {
+        "text": "WAIT where you are",
+        "next": "wait"
+      },
+      "1": {
+        "text": "Start heading NORTH",
+        "next": "north_entry"
+      },
+      "2": {
+        "text": "Start heading SOUTH",
+        "next": "south_entry"
+      },
+      "3": {
+        "text": "Start heading EAST",
+        "next": "east_entry"
+      },
+      "4": {
+        "text": "Start heading WEST",
+        "next": "west_entry"
+      }
+    }
+  },
+  "wait": {
+    "text": [
+      "You waited for what seems like an eternity."
+    ],
+    "input": "Would you like to continue waiting?",
+    "response": {
+      "0": {
+        "text": "Yes",
+        "next": "wait"
+      },
+      "1": {
+        "text": "No",
+        "next": "wait_start"
+      }
+    }
+  },
+  "wait_start": {
+    "text": [
+      "Enjoyed waiting?",
+      "You're not making any progress, ${name}."
+    ],
+    "next": "start"
+  },
+  "north_entry": {
+    "text": [
+      "You decide to head north.",
+      "As you move, you enter a forest. Inside the forest, you hit a fork."
+    ],
+    "input": "Do you take the left or right path?",
+    "response": {
+      "0": {
+        "text": "Left",
+        "next": "northwest"
+      },
+      "1": {
+        "text": "Right",
+        "next": "northeast"
+      }
+    }
+  },
+  "northwest": {
+    "text": [
+      "You take the left fork, heading northwest.",
+      "The forest keeps getting thicker and thicker,",
+      "darker and darker, quieter and quieter.",
+      "Eventually, you realize that you've died."
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "northeast": {
+    "text": [
+      "You take the right fork, heading northeast",
+      "A sleeping grizzly bear arises. She is a mother bear",
+      "and is pissed that you just intruded her habitat!"
+    ],
+    "input": "You glance around and see a few options.",
+    "response": {
+      "0": {
+        "text": "RUN FOR YOUR *****ing LIFE!",
+        "next": "northeast_run"
+      },
+      "1": {
+        "text": "Stand in shock",
+        "next": "northeast_still"
+      },
+      "2": {
+        "text": "Throw a rock in the distance",
+        "next": "northeast_rockd"
+      },
+      "3": {
+        "text": "Throw a rock at the bear",
+        "next": "northeast_rockb"
+      }
+    }
+  },
+  "northeast_bearkill": {
+    "text": [
+      "Before you know it, you are in the grizzly bear's mouth.",
+      "She thinks you taste like crap."
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "northeast_wolf": {
+    "text": [
+      "All of a sudden, a brilliantly-white wolf jumped out of nowhere and took on the bear!",
+      "The bear died, and the wolf pledged its allegiance to yourself."
+    ],
+    "input": "Name your new companion!",
+    "response": {
+      "*wolfname": {
+        "text": "",
+        "next": "northeast_wolfh"
+      }
+    }    
+  },
+  "northeast_run": {
+    "text": [
+      "You ran for your ****ing life!",
+      "Unfortunately, your 5 minute mile in high school was not enough to outpace the sprinting bear for more than a second"
+    ],
+    "next": "northeast_bearkill"
+  },
+  "northeast_still": {
+    "text": [
+      "You felt your blood go cold. Trying to move was naught;",
+      "for your muscles became immobile."
+    ],
+    "next": "northeast_wolf"
+  },
+  "northeast_rockd": {
+    "text": [
+      "With your ${hand} hand, you throw a rock behind the grizzly",
+      "Let's just say that didn't do nothing."
+    ],
+    "next": "northeast_bearkill"
+  },
+  "northeast_rockb": {
+    "text": [
+      "With your ${hand} hand, you throw a rock AT the grizzly",
+      "She turns on you, and is ready to kill..."
+    ],
+    "next": "northeast_wolf"
+  },
+  "northeast_wolfh": {
+    "text": [
+      "You and your new pal ${wolfname} begin to move south throughout the forest.",
+      "After some time, you begin to lose trust in ${wolfname}.",
+      "He keeps sniffing and growling at you."
+    ],
+    "input": "What do you do?",
+    "response": {
+      "0": {
+        "text": "Abandon your companion",
+        "next": "northeast_wolfa"
+      },
+      "1": {
+        "text": "Trust your companion",
+        "next": "northeast_wolft"
+      }
+    }
+  },
+  "northeast_wolfa": {
+    "text": [
+      "You abandon ${wolfname} abruptly.",
+      "However, you had made the right call. ${wolfname} was a werewolf and he would have killed you.",
+      "You continue moving south, past the forest."
+    ],
+    "next": "i15nb"
+  },
+  "northeast_wolft": {
+    "text": [
+      "You decide to trust ${wolfname}.",
+      "You keep moving until the next night, when it's a full moon",
+      "Before you know it, ${wolfname} is ripping you to shreds! He is a werewolf!"
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "south_entry": {
+    "text": [
+      "You decide to head south."
+    ],
+    "next": "south"
+  },
+  "south": {
+    "text": [
+      "You encounter a crumbling road!",
+      "You look around, and see a signed labeled:",
+      "/---------------------\\",
+      "| I N T E R S T A T E |",
+      "|                     |",
+      "|    /$$   /$$$$$$$   |",
+      "|  /$$$$  | $$____/   |",
+      "| |_  $$  | $$        |",
+      "|   | $$  | $$$$$$$   |",
+      "|   | $$  |_____  $$  |",
+      "|   | $$   /$$  \\ $$  |",
+      "|  /$$$$$$|  $$$$$$/  |",
+      "| |______/ \\______/   |",
+      "|                     |",
+      "|   M I L E   2 0 5   |",
+      "\\---------------------/",
+      "A sign on the northbound road says 99 miles to \"Salt Lake City\"."
+    ],
+    "input": "Where do you go now?",
+    "response": {
+      "0": {
+        "text": "North along the road",
+        "next": "i15nb_entry"
+      },
+      "1": {
+        "text": "South along the road",
+        "next": "i15sb202"
+      },
+      "2": {
+        "text": "Wait until help arrives!",
+        "next": "i15help"
+      }
+    }
+  },
+  "i15help": {
+    "text": [
+      "You wait for help, as you are too cowardly to set off on your own.",
+      "You remain rigid in your not moving, and eventually pass out sometime around 3:00 PM, when it is 115 *F."
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "i15nb_entry": {
+    "text": [
+      "You travel north along the road."
+    ],
+    "next": "i15nb"
+  },
+  "i15nb": {
+    "text": [
+      "After walking for several days, you arrive in a place with tall buildings",
+      "It is called Salt Lake City.",
+      "However, Salt Lake is NOT the place, unlike what Brigham Young claims.",
+      "So, you continue heading south."
+    ],
+    "next": "i15sb202"
+  },
+  "i15sb202": {
+    "text": [
+      "You travel south along the road.",
+      "After walking for 45 minutes, you see an exit labeled \"Exit 202: YUBA LAKE\".",
+      "You walk down the ramp, and see a car!",
+      "This car has the keys in the ignition!"
+    ],
+    "input": "What model car is this? You don't know; use your imagination!",
+    "response": {
+      "*carname": {
+        "text": "",
+        "next": "i15sb132"
+      }
+    }
+  },
+  "i15sb132": {
+    "text": [
+      "You drive your new ${carname} for 70 miles!",
+      "Suddenly, you reach a road labeled \"I-70 to Denver\".",
+      "According to your car's clock, it is 2:05 AM."
+    ],
+    "input": "Do you drive to Denver?",
+    "response": {
+      "0": {
+        "text": "Yes",
+        "next": "i70eb"
+      },
+      "1": {
+        "text": "No",
+        "next": "i15sbaz"
+      }
+    }
+  },
+  "i70eb": {
+    "text": [
+      "After driving on I-70 for hours, you realize you will not reach Denver.",
+      "Suddenly at 4:20 AM, you see two bright lights!",
+      "The lights are coming faster and faster!",
+      "They are car headlights, accelerating lightning fast!",
+      "Before you know it, you have been struck by another car at 7500 Newtons (15.7 mph acceleration * 1250 kg)!"
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "i15sbaz": {
+    "text": [
+      "You continue driving on I-15 for several more hours.",
+      "At around 5:15 AM, the terrain becomes desert-like as you enter the state of Arizona.",
+      "Suddenly, the road becomes extremely narrow and treacherous!",
+      "There are great cliffs to your left and right!"
+    ],
+    "input": "How do you react?",
+    "response": {
+      "0": {
+        "text": "Freak out and hit the gas",
+        "next": "i15sbaz_120"
+      },
+      "1": {
+        "text": "Stay calm; slow down to 60.",
+        "next": "i15sbnv"
+      },
+      "2": {
+        "text": "Try to relax by drinking that blue container labeled Bud Light",
+        "next": "i15sbaz_intox"
+      }
+    }
+  },
+  "i15sbaz_die": {
+    "text": [
+      "Suddenly, you zip off the road!",
+      "You experience three seconds of terror as your car falls down the Virgin River Gorge.",
+      "Death comes faster than you can say \"AVADA KEDEVRA\"!"
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "i15sbaz_120": {
+    "text": [
+      "You hit the gas and watch as the red needle",
+      "on your speedometer climbs to 120."
+    ],
+    "next": "i15sbaz_die"
+  },
+  "i15sbnv": {
+    "text": [
+      "The sun has actually arisen over the Mohave Desert!",
+      "You drive for another hour before seeing a sign labeled WELCOME TO LAS VEGAS!",
+      "Eventually, you see many tall buildings.",
+      "You enter the ARIA Resort, which is 600 feet in height.",
+      "To your surprise, there are people for miles."
+    ],
+    "input": "Where do you go in this vast hotel?",
+    "response": {
+      "0": {
+        "text": "Head to the casino!",
+        "next": "aria_casino_entry"
+      },
+      "1": {
+        "text": "Go to the rooftop!",
+        "next": "aria_roof"
+      },
+      "2": {
+        "text": "Go to the elevator; pick a floor, any floor!",
+        "next": "aria_elevator"
+      }
+    }
+  },
+  "i15sbaz_intox": {
+    "text": [
+      "With your ${hand} hand, you grab the Bud Light.",
+      "Your BAC ascends to 0.36.",
+      "After several minutes, you begin to lose focus of everything."
+    ],
+    "next": "i15sbaz_die"
+  },
+  "aria_casino_entry": {
+    "text": [
+      "You enter the ARIA Casino."
+    ],
+    "next": "aria_casino"
+  },
+  "aria_casino": {
+    "text": [
+      "You see a slot machine labeled:",
+      "$ 100,000 JACKPOT!",
+      "You can't resist the temptation to play..."
+    ],
+    "next": "aria_casino"
+  },
+  "aria_roof": {
+    "text": [
+      "You take the elevator to the top floor, and then head up the stairs to the roof.",
+      "There are ten men in black suits at the roof, each with a number between 0 and 9.",
+      "They tell you that you have been placed in an alternate dimension, and there is only one means of escaping.",
+      "You are given a riddle:"
+    ],
+    "next": "aria_finalriddle"
+  },
+  "aria_finalriddle": {
+    "text": [
+      "On this roof, ten in black",
+      "They have knowledge that you lack",
+      "Choose right; you are reborn",
+      "How many doth sound the horn?"
+    ],
+    "input": "Choose a number between 0 and 9.",
+    "response": {
+      "0": {
+        "text": "Number 0",
+        "next": "aria_finalriddle_fail"
+      },
+      "1": {
+        "text": "Number 1",
+        "next": "aria_finalriddle_fail"
+      },
+      "2": {
+        "text": "Number 2",
+        "next": "aria_finalriddle_fail"
+      },
+      "3": {
+        "text": "Number 3",
+        "next": "aria_finalriddle_fail"
+      },
+      "4": {
+        "text": "Number 4",
+        "next": "aria_finalriddle_fail"
+      },
+      "5": {
+        "text": "Number 5",
+        "next": "aria_finalriddle_fail"
+      },
+      "6": {
+        "text": "Number 6",
+        "next": "aria_finalriddle_fail"
+      },
+      "7": {
+        "text": "Number 7",
+        "next": "aria_finalriddle_success"
+      },
+      "8": {
+        "text": "Number 8",
+        "next": "aria_finalriddle_fail"
+      },
+      "9": {
+        "text": "Number 9",
+        "next": "aria_finalriddle_fail"
+      }
+    }
+  },
+  "aria_finalriddle_fail": {
+    "text": [
+      "You chose the wrong number!",
+      "You were killed instantly."
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "aria_finalriddle_success": {
+    "text": [
+      "You got it!",
+      "In Rev. 8:6, seven trumpets are sounded during the End Times.",
+      "(The poem was worded poorly because of seven-syllable constraints).",
+      "",
+      "Regardless, you have been returned to the original dimension!",
+      "Congratulations!"
+    ],
+    "next": "victory"
+  },
+  "aria_elevator": {
+    "text": [
+      "You decide to navigate to the elevators."
+    ],
+    "input": "Choose a floor to go to.",
+    "response": {
+      "*elevatorfloor": {
+        "text": "",
+        "next": "aria_elevator_fail"
+      }
+    }
+  },
+  "aria_elevator_fail": {
+    "text": [
+      "Floor ${elevatorfloor} was not the right floor!",
+      "You know what? You've been struggling for so long that you just give up your quest."
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  },
+  "east_entry": {
+    "text": [
+      "You decide to head east.",
+      "Suddenly, you realize that east is just a figment of your imagination.",
+      "So, you turn around."
+    ],
+    "next": "start"
+  },
+  "west_entry": {
+    "text": [
+      "You decide to head west."
+    ],
+    "next": "west"
+  },
+  "west": {
+    "text": [
+      "Before you know it, a vast body of water stands in your way."
+    ],
+    "input": "Do you try to cross the body of water or turn around?",
+    "response": {
+      "0": {
+        "text": "Cross it",
+        "next": "westpacific"
+      },
+      "1": {
+        "text": "Turn around",
+        "next": "start"
+      }
+    }
+  },
+  "westpacific": {
+    "text": [
+      "You decide to brave it out and cross the massive body of water",
+      "You make a cheap sailboat out of wood.",
+      "You're so proud of this concoction that you want to name it."
+    ],
+    "input": "What do you want to name your boat?",
+    "response": {
+      "*boatname": {
+        "text": "",
+        "next": "westpacific_lc"
+      }
+    }
+  },
+  "westpacific_lc": {
+    "text": [
+      "You begin your sail of the seven seas with ${boatname}!",
+      "Suddenly, you see the navy horizon turn into black.",
+      "You're now second-guessing your impulsions."
+    ],
+    "input": "Do you really want to continue sailing?",
+    "response": {
+      "0": {
+        "text": "Head back to land",
+        "next": "west"
+      },
+      "1": {
+        "text": "Yes, keep going!",
+        "next": "westpacific_die"
+      }
+    }
+  },
+  "westpacific_die": {
+    "text": [
+      "You decide to continue sailing.",
+      "Suddenly, everything becomes pitch black.",
+      "You are falling, falling, falling!",
+      "Let's just say that Kyrie was right about the Earth."
+    ],
+    "input": "Any last words?",
+    "response": {
+      "*lastwords": {
+        "text": "",
+        "next": "exit"
+      }
+    }
+  }
+}

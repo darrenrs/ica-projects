@@ -1,0 +1,143 @@
+body {
+  font-family: "Product Sans";
+  margin: 0;
+}
+
+/*
+  HEADER
+  Last modified 2020-10-14T14:38:38-06:00
+*/
+
+header {
+  background-image: url("background.jpg");
+  background-size: cover;
+  height: 100vh;
+  line-height: 100vh;
+}
+
+header h1 {
+  text-align: center;
+  vertical-align: middle;
+  
+  font-variant: small-caps;
+  font-size: calc(32px + 60 * ((100vw - 300px) / 1600));
+  margin: 0;
+
+  /* Background stuff */
+  background-color: #ed4940; /* fallback */
+
+  background-image: linear-gradient(45deg,
+    #ed4940 25%,
+    #ed4940 35%,
+    #e89817 35%,
+    #e89817 50%,
+    #2cc746 50%,
+    #2cc746 65%,
+    #226de6 65%
+  );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  
+  animation: header-red-text-rd 0.5s ease forwards;
+}
+
+header h1:hover {
+  animation: header-red-text 0.5s ease-in forwards;
+}
+
+@keyframes header-red-text {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+
+@keyframes header-red-text-rd {
+  0% {
+    background-size: 650%;
+  }
+  80% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+.header-sub {
+  background: linear-gradient(180deg, rgba(54, 81, 102, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  padding: 40px;
+}
+
+/*
+  MAIN CONTENT
+  Last modified 2020-10-14T15:11:58-06:00
+*/
+
+article {
+  margin: 30px;
+}
+
+div#header-secondary {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+div#header-secondary * {
+  display: inline;
+}
+
+div#header-secondary img {
+  width: 32px;
+}
+
+div#header-secondary-sub {
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1em;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h2 div {
+  display: inline;
+}
+
+h2 a img {
+  width: 16px;
+}
+
+/*
+  FOOTER
+  Last modified 2020-10-18T19:53:48-06:00
+*/
+
+.footer-sub {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, rgba(31, 31, 31, 1) 100%);
+  line-height: 5vh;
+  padding: 40px;
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  height: 10vh;
+  padding: 20px;
+  font-size: 1.5em;
+}

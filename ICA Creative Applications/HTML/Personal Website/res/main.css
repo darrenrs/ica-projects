@@ -1,0 +1,106 @@
+#drs-darkmode-button.btn-outline-light:focus,
+#drs-darkmode-button.btn-outline-light:hover {
+  transition: background-color 0.5s, color 0.5s;
+  background-color: var(--dark);
+  color: var(--light) !important;
+}
+
+#drs-darkmode-button.btn-outline-dark:focus,
+#drs-darkmode-button.btn-outline-dark:hover {
+  transition: background-color 0.5s, color 0.5s;
+  background-color: var(--light);
+  color: var(--dark) !important;
+}
+
+#drs-logo,
+#drs-image-google {
+  width: 32px;
+}
+
+#drs-search-google:focus,
+#drs-search-google:hover,
+#drs-qlp-passwd:focus,
+#drs-qlp-passwd:hover {
+  transition: border 1s;
+  border: 2px var(--primary) solid;
+  box-shadow: none;
+}
+
+.modal-body .row {
+  margin-top: 10px;
+}
+
+.modal-body .row * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.bg-white > .container * a {
+  color: var(--blue);
+}
+
+body.bg-white > .container * a:focus,
+body.bg-white > .container * a:hover {
+  border-bottom: 1px var(--blue) solid;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+body.bg-dark > .container * a {
+  color: var(--red);
+}
+
+body.bg-dark > .container * a:focus,
+body.bg-dark > .container * a:hover {
+  border-bottom: 1px var(--red) solid;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.container {
+  margin-top: 2.5rem;
+}
+
+.container p, .container li {
+  text-align: justify;
+}
+
+h1.display-2,
+h1.display-3 {
+  text-shadow: 2px 2px 3px #aaa;
+}
+
+#drs-qlp-passwd {
+  display: inline-flex;
+  width: 50%;
+}
+
+.drs-iconpr-phone:before {
+    background-image: url("/res/img/icon/phone.png");
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    content: "";
+}
+
+.drs-iconpr-email:before {
+    background-image: url("/res/img/icon/email.png");
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    content: "";
+}
+
+.drs-iconpr-twitter:before {
+    background-image: url("/res/img/icon/twitter.png");
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    content: "";
+}

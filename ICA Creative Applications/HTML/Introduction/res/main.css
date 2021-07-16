@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+}
+
+header, footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+}
+
+img#headerImg {
+  width: 48px;
+}
+
+img#bsodImg {
+  width: 480px;
+  border: 2px blue solid;
+}
+
+#imageHold {
+  padding-left: 0%;
+  transition: padding-left 2s;
+}
+
+#imageHold:hover {
+  padding-left: 60%;
+}
+
+#time {
+  font-family: monospace;
+}
+
+footer {
+  height: 768px;
+  font-size: 256px;
+}

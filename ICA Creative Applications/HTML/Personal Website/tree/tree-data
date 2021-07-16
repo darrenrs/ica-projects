@@ -1,0 +1,200 @@
+{
+    "name": "",
+    "mimeType": "dir",
+    "children": [
+        {
+            "name": "about",
+            "mimeType": "dir",
+            "children": [
+                {
+                    "name": "index.html",
+                    "mimeType": "text/html",
+                    "size": 11043
+                }
+            ]
+        },
+        {
+            "name": "interests",
+            "mimeType": "dir",
+            "children": [
+                {
+                    "name": "index.html",
+                    "mimeType": "text/html",
+                    "size": 8406
+                }
+            ]
+        },
+        {
+            "name": "internet",
+            "mimeType": "dir",
+            "children": [
+                {
+                    "name": "index.html",
+                    "mimeType": "text/html",
+                    "size": 7760
+                }
+            ]
+        },
+        {
+            "name": "ql",
+            "mimeType": "dir",
+            "children": [
+                {
+                    "name": "index.html",
+                    "mimeType": "text/html",
+                    "size": 6134
+                },
+                {
+                    "name": "qlpc",
+                    "mimeType": "text/base64",
+                    "size": 3520
+                }
+            ]
+        },
+        {
+            "name": "res",
+            "mimeType": "dir",
+            "children": [
+                {
+                    "name": "img",
+                    "mimeType": "dir",
+                    "children": [
+                        {
+                            "name": "icon",
+                            "mimeType": "dir",
+                            "children": [
+                                {
+                                    "name": "email.png",
+                                    "mimeType": "image/png",
+                                    "size": 23018
+                                },
+                                {
+                                    "name": "phone.png",
+                                    "mimeType": "image/png",
+                                    "size": 2589
+                                },
+                                {
+                                    "name": "twitter.png",
+                                    "mimeType": "image/png",
+                                    "size": 5363
+                                }
+                            ]
+                        },
+                        {
+                            "name": "personal",
+                            "mimeType": "dir",
+                            "children": [
+                                {
+                                    "name": "family.jpg",
+                                    "mimeType": "image/jpeg",
+                                    "size": 9013844
+                                },
+                                {
+                                    "name": "img.css",
+                                    "mimeType": "text/css",
+                                    "size": 69
+                                },
+                                {
+                                    "name": "self.jpg",
+                                    "mimeType": "image/jpeg",
+                                    "size": 7522966
+                                }
+                            ]
+                        },
+                        {
+                            "name": "code.mp4",
+                            "mimeType": "video/mp4",
+                            "size": 5444844
+                        },
+                        {
+                            "name": "deluxe.png",
+                            "mimeType": "image/png",
+                            "size": 26643
+                        },
+                        {
+                            "name": "gsuite.png",
+                            "mimeType": "image/png",
+                            "size": 17908
+                        }
+                    ]
+                },
+                {
+                    "name": "index-bg.css",
+                    "mimeType": "text/css",
+                    "size": 544
+                },
+                {
+                    "name": "main.css",
+                    "mimeType": "text/css",
+                    "size": 2078
+                },
+                {
+                    "name": "main.js",
+                    "mimeType": "text/javascript",
+                    "size": 6298
+                },
+                {
+                    "name": "qlpass.js",
+                    "mimeType": "text/javascript",
+                    "size": 1239
+                }
+            ]
+        },
+        {
+            "name": "setvar",
+            "mimeType": "dir",
+            "children": [
+                {
+                    "name": "index.html",
+                    "mimeType": "text/html",
+                    "size": 697
+                },
+                {
+                    "name": "setvar.js",
+                    "mimeType": "text/javascript",
+                    "size": 1304
+                }
+            ]
+        },
+        {
+            "name": "tree",
+            "mimeType": "dir",
+            "children": [
+                {
+                    "name": "index.html",
+                    "mimeType": "text/html",
+                    "size": 703
+                },
+                {
+                    "name": "tree-data",
+                    "mimeType": "text/json",
+                    "size": 6234
+                },
+                {
+                    "name": "tree.css",
+                    "mimeType": "text/css",
+                    "size": 215
+                },
+                {
+                    "name": "tree.js",
+                    "mimeType": "text/javascript",
+                    "size": 2256
+                }
+            ]
+        },
+        {
+            "name": "favicon.ico",
+            "mimeType": "image/x-icon",
+            "size": 111931
+        },
+        {
+            "name": "index.html",
+            "mimeType": "text/html",
+            "size": 9662
+        },
+        {
+            "name": "last-updated",
+            "mimeType": "text/plain",
+            "size": 25
+        }]
+}

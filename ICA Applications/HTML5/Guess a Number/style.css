@@ -1,0 +1,86 @@
+body {
+  font-family: "Gill Sans MT", "Gill Sans", "Roboto", "Helvetica", sans-serif;
+  margin: 4px;
+  position: relative;
+  height: 100%;
+  min-height: 25rem;
+  overflow-x: hidden;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    width: 60%;
+  }
+}
+
+.section:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f8f9fa;
+  margin-bottom: 10px;
+}
+
+label, span:first-child {
+  width: 150px;
+  display: inline-block;
+  font-weight: 900;
+}
+
+input:not([type*="button"]) {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border-width: 0px;
+  border-bottom: 2.5px #e62a2a solid;
+  transition: border-bottom 0.5s linear;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+input:not([type*="button"]):hover {
+  border-bottom: 2.5px #2caaf9 solid;
+}
+
+input[type*="button"] {
+  border-width: 0px;
+  padding: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.button-play {
+  background-color: #2caaf9;
+  color: #343a40;
+}
+
+.button-cancel {
+  background-color: #e62a2a;
+  color: #f8f9fa;
+}
